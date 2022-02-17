@@ -61,7 +61,7 @@
                         <id>default-cli</id>
                         <configuration>
                             <mainClass>
-                                com.example.progettoesameispwalessandrodifilippo/com.example.progettoesameispwalessandrodifilippo.HelloApplication
+                                com.example.progettoesameispwalessandrodifilippo/com.example.progettoesameispwalessandrodifilippo.PhraseNumberOfWordsCount
                             </mainClass>
                             <launcher>app</launcher>
                             <jlinkZipName>app</jlinkZipName>
