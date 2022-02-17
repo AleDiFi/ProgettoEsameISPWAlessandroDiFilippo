@@ -6,6 +6,7 @@ import javafx.scene.control.Label;
 import javafx.scene.control.TextField;
 
 import java.lang.reflect.GenericDeclaration;
+import java.util.StringTokenizer;
 
 public class NumberOfWordsController {
 
@@ -23,11 +24,7 @@ public class NumberOfWordsController {
     }
 
     private Integer countNumberOfWords(String phrase) {
-        Integer num = 0;
-        for(int i = 0; i < phrase.length(); i++){
-            char c = phrase.charAt(i);
-            if (c == ' ' || c == '.' || c == ',') num += 1;
-        }
-        return num;
+        StringTokenizer phraseSegments = new StringTokenizer(phrase);
+        return phraseSegments.countTokens();
     }
 }
